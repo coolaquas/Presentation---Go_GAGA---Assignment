@@ -1,0 +1,44 @@
+.app {
+  background: linear-gradient(
+    to right,
+    rgb(235, 112, 163),
+    rgb(255, 255, 255),
+    rgb(168, 255, 248)
+  );
+}
+.app__header {
+  background: linear-gradient(rgb(236, 254, 255), rgb(255, 255, 255));
+  display: flex;
+  justify-content: space-around;
+}
+.app__header > h1 {
+  color: rgb(161, 37, 109);
+}
+.app__upload {
+  align-items: center;
+  padding-top: 10px;
+}
+.upload__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.upload__container div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.upload__container div span {
+  font-weight: 500;
+  font-size: 20px;
+}
+.upload__container div input {
+  border: none;
+  border-bottom: 1px solid lightcoral;
+  outline: none;
+}
+.app__cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
