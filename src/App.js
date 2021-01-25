@@ -26,8 +26,9 @@ function App(props) {
       let url = `${
         window.location.hostname === "localhost"
           ? "http://localhost:8000/api/"
-          : "https://spangle-jasper-ocarina.glitch.me"
+          : "https://spangle-jasper-ocarina.glitch.me/api/"
       }${option}`;
+      console.log(url);
       await axios.get(url).then((res) => {
         setCardsData(res.data.reverse());
       });
